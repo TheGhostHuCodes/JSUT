@@ -1,0 +1,23 @@
+{
+  "name": "jsut",
+  "version": "1.0.0",
+  "description": "Javascript Unit Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheGhostHuCodes/JSUT.git"
+  },
+  "author": "Yung-Jin (Joey) Hu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheGhostHuCodes/JSUT/issues"
+  },
+  "homepage": "https://github.com/TheGhostHuCodes/JSUT#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0"
+  }
+}
