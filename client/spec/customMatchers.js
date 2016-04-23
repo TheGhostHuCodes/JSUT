@@ -26,6 +26,22 @@ var customMatchers = {
             },
         };
     },
+    toBeVisible : function(util, customEqualityTesters) {
+        return {
+            compare : function(actual, message) {
+                return {
+                    pass : actual.offsetParent !== null,
+                    message : `Element is unexpetedly invisible! ${message}`,
+                };
+            },
+            negativeCompare : function(actual, message) {
+                return {
+                    pass : actual.offsetParent === null,
+                    message : `Element is unexpetedly visible! ${message}`,
+                };
+            },
+        };
+    },
 };
 
 beforeEach(() => { jasmine.addMatchers(customMatchers); });
