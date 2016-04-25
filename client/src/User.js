@@ -1,12 +1,7 @@
-function User(userRepo)
+class User
 {
-    this.userRepo = userRepo;
+    constructor(userRepo) { this.userRepo = userRepo; }
+
+    save(userObject) { return this.userRepo.save(userObject); }
+    get(id) { return this.userRepo.get(id); }
 }
-
-User.prototype.save = function(userObject) {
-    return this.userRepo.save(userObject);
-};
-
-User.prototype.get = function(id) {
-    return this.userRepo.get(id);
-};
